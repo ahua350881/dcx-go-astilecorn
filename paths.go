@@ -146,7 +146,7 @@ func ElectronDownloadSrc(os, arch, versionElectron string) string {
 
 	// https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/release/download/v11.4.3/electron-windows-amd64-v11.4.3.zip
 	// Return url
-	return fmt.Sprintf("https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/electron/releases/download/v%s/electron-v%s-%s-%s.zip", versionElectron, versionElectron, o, a)
+	return fmt.Sprintf("https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/releases/download/v%s/electron-v%s-%s-%s.zip", versionElectron, versionElectron, o, a)
 }
 
 // initAppExecutable initializes the app executable path
