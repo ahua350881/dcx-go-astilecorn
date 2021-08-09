@@ -1,4 +1,4 @@
-module github.com/ahua350881/dcx-go-astilectron
+module github.com/ahua350881/dcx-go-astilecorn
 
 go 1.13
 
