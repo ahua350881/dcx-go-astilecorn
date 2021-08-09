@@ -1,1 +1,0 @@
-import{G as o,H as t,r as n,o as e,c as s,w as a,I as r}from"./vendor.83cbd3ea.js";const c={components:{NButton:o},setup(){const o=t();return{toDemo:()=>{o.push({path:"/demo"})}}}},u=r(" 前往demo ");c.render=function(o,t,r,c,d,m){const p=n("n-button");return e(),s(p,{onClick:c.toDemo},{default:a((()=>[u])),_:1},8,["onClick"])};export{c as default};
