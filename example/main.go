@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/ahua350881/dcx-go-astilectron"
 	"github.com/asticode/go-astikit"
-	"github.com/asticode/go-astilectron"
 )
 
 func main() {
