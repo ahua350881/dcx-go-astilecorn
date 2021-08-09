@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"log"
-
-	"github.com/ahua350881/dcx-go-astilectron"
+	"github.com/ahua350881/dcx-go-astilecorn"
 	"github.com/asticode/go-astikit"
+	"log"
 )
 
 func main() {
