@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 // Paths represents the set of paths needed by Astilectron
@@ -123,30 +124,30 @@ func AstilectronDownloadSrc(versionAstilectron string) string {
 
 // ElectronDownloadSrc returns the download URL of the platform-dependant electron zipfile
 func ElectronDownloadSrc(os, arch, versionElectron string) string {
-	//// Get OS name
-	//var o string
-	//switch strings.ToLower(os) {
-	//case "darwin":
-	//	o = "darwin"
-	//case "linux":
-	//	o = "linux"
-	//case "windows":
-	//	o = "win32"
-	//}
-	//
-	//// Get arch name
-	//var a = "ia32"
-	//if strings.ToLower(arch) == "amd64" {
-	//	a = "x64"
-	//} else if strings.ToLower(arch) == "arm" && o == "linux" {
-	//	a = "armv7l"
-	//} else if strings.ToLower(arch) == "arm64" {
-	//	a = "arm64"
-	//}
-	return fmt.Sprintf(" https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/release/download/v11.4.3/electron-windows-amd64-v11.4.3.zip")
+	// Get OS name
+	var o string
+	switch strings.ToLower(os) {
+	case "darwin":
+		o = "darwin"
+	case "linux":
+		o = "linux"
+	case "windows":
+		o = "win32"
+	}
+
+	// Get arch name
+	var a = "ia32"
+	if strings.ToLower(arch) == "amd64" {
+		a = "x64"
+	} else if strings.ToLower(arch) == "arm" && o == "linux" {
+		a = "armv7l"
+	} else if strings.ToLower(arch) == "arm64" {
+		a = "arm64"
+	}
+	//return fmt.Sprintf(" https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/release/download/v11.4.3/electron-windows-amd64-v11.4.3.zip")
 	// https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/release/download/v11.4.3/electron-windows-amd64-v11.4.3.zip
 	// Return url
-	//return fmt.Sprintf("https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/releases/download/v%s/electron-v%s-%s-%s.zip", versionElectron, versionElectron, o, a)
+	return fmt.Sprintf("https://byedu-print.oss-cn-shenzhen.aliyuncs.com/electron/releases/download/v%s/electron-v%s-%s-%s.zip", versionElectron, versionElectron, o, a)
 }
 
 // initAppExecutable initializes the app executable path
